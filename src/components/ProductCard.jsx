@@ -25,8 +25,8 @@ export default function ProductCard({
       </div>
 
       <div className="product-info">
-        <div className="product-top-row">
-          <h3 className="product-title">{name}</h3>
+        <h3 className="product-title">{name}</h3>
+        <div className="product-meta-row">
           <strong className="product-price">{item.priceLabel[language]}</strong>
         </div>
         <p className="product-description">{item.description[language]}</p>

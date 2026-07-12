@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Flame, SearchX } from 'lucide-react';
 import CategoryTabs from './components/CategoryTabs.jsx';
 import Header from './components/Header.jsx';
@@ -48,7 +48,17 @@ function getInitialActiveCategory() {
   return savedExists ? saved : (categories[0]?.id ?? '');
 }
 
+function getStickyMenuOffset() {
+  const rawValue = getComputedStyle(document.documentElement).getPropertyValue(
+    '--sticky-menu-height',
+  );
+  const value = Number.parseFloat(rawValue);
+
+  return Number.isFinite(value) ? value : 190;
+}
+
 export default function App() {
+  const stickyMenuRef = useRef(null);
   const [activeCategory, setActiveCategory] = useState(getInitialActiveCategory);
   const [searchQuery, setSearchQuery] = useState('');
   const [order, setOrder] = useState(getInitialOrder);
@@ -114,13 +124,48 @@ export default function App() {
     return () => document.body.classList.remove('drawer-open');
   }, [isOrderOpen]);
 
+  useEffect(() => {
+    const stickyMenu = stickyMenuRef.current;
+
+    if (!stickyMenu) {
+      return undefined;
+    }
+
+    const updateStickyMenuHeight = () => {
+      const height = Math.ceil(stickyMenu.getBoundingClientRect().height);
+
+      if (height > 0) {
+        document.documentElement.style.setProperty('--sticky-menu-height', `${height}px`);
+      }
+    };
+
+    updateStickyMenuHeight();
+
+    if (typeof ResizeObserver !== 'undefined') {
+      const observer = new ResizeObserver(updateStickyMenuHeight);
+      observer.observe(stickyMenu);
+      return () => observer.disconnect();
+    }
+
+    window.addEventListener('resize', updateStickyMenuHeight);
+    return () => window.removeEventListener('resize', updateStickyMenuHeight);
+  }, []);
+
   function scrollToMenu() {
-    document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const menu = document.getElementById('menu');
+
+    if (!menu) {
+      return;
+    }
+
+    const top = menu.getBoundingClientRect().top + window.scrollY - getStickyMenuOffset() - 16;
+    window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
   }
 
   function handleCategoryChange(categoryId) {
     setActiveCategory(categoryId);
     writeStorageValue(ACTIVE_CATEGORY_STORAGE_KEY, categoryId);
+    requestAnimationFrame(scrollToMenu);
   }
 
   function incrementItem(itemId) {
@@ -146,7 +191,7 @@ export default function App() {
     <>
       <Hero onMenuClick={scrollToMenu} onOrderClick={() => setIsOrderOpen(true)} copy={copy} />
 
-      <div className="menu-sticky-shell">
+      <div className="menu-sticky-shell" ref={stickyMenuRef}>
         <div className="menu-sticky-shell__inner">
           <Header
             searchQuery={searchQuery}
@@ -179,7 +224,7 @@ export default function App() {
           <p>{copy.menuDescription}</p>
         </div>
 
-        <section className={productGridClassName} aria-live="polite">
+        <section className={`${productGridClassName} products-section`} aria-live="polite">
           {visibleItems.length ? (
             visibleItems.map((item) => (
               <ProductCard
