@@ -108,7 +108,7 @@ export default function App() {
 
   const orderCount = orderItems.reduce((sum, entry) => sum + entry.quantity, 0);
   const orderTotal = orderItems.reduce((sum, entry) => sum + entry.item.price * entry.quantity, 0);
-  const productGridClassName = orderCount > 0 ? 'product-grid has-floating-cart' : 'product-grid';
+  const productGridClassName = orderCount > 0 ? 'products-grid has-floating-cart' : 'products-grid';
 
   useEffect(() => {
     writeStorageValue(STORAGE_KEY, JSON.stringify(order));
