@@ -1,6 +1,7 @@
 import ajvar from '../assets/product-images/ajvar.webp';
 import aleksandrijaBela from '../assets/product-images/aleksandrija-bela.webp';
 import aleksandrijaCrvena from '../assets/product-images/aleksandrija-crvena.webp';
+import biftek from '../assets/product-images/biftek.webp';
 import biraMoreti from '../assets/product-images/bira-moreti.webp';
 import cezar from '../assets/product-images/cezar.webp';
 import chipsTikvichki from '../assets/product-images/chips-tikvichki.webp';
@@ -41,10 +42,13 @@ import muskatTemjanikaBovin from '../assets/product-images/muskat-temjanika-bovi
 import negazirana05l from '../assets/product-images/negazirana-05l.webp';
 import negaziranaPlastika1l from '../assets/product-images/negazirana-plastika-1l.webp';
 import negaziranaStaklo from '../assets/product-images/negazirana-staklo.webp';
+import ognishtarka from '../assets/product-images/ognishtarka.webp';
 import pastrmajlijaChista from '../assets/product-images/pastrmajlija-chista.webp';
 import peglanaPiperka from '../assets/product-images/peglana-piperka.webp';
 import pepsi from '../assets/product-images/pepsi.webp';
+import pileshkiKopanBezKoska from '../assets/product-images/pileshki-kopan-bez-koska.webp';
 import pileshkiPrsti from '../assets/product-images/pileshki-prsti.webp';
+import pileshkiStek from '../assets/product-images/pileshki-stek.webp';
 import piperkaVoPavlaka from '../assets/product-images/piperka-vo-pavlaka.webp';
 import pohovanKashkaval from '../assets/product-images/pohovan-kashkaval.webp';
 import pohovaniZdenki from '../assets/product-images/pohovani-zdenki.webp';
@@ -71,6 +75,7 @@ import tgaZaJug from '../assets/product-images/tga-za-jug.webp';
 import tonik from '../assets/product-images/tonik.webp';
 import traminec from '../assets/product-images/traminec.webp';
 import traminecBovin from '../assets/product-images/traminec-bovin.webp';
+import uvijach from '../assets/product-images/uvijach.webp';
 import uzoPlomari from '../assets/product-images/uzo-plomari.webp';
 import uzoPlomariShishe from '../assets/product-images/uzo-plomari-shishe.webp';
 import vafla from '../assets/product-images/vafla.webp';
@@ -87,6 +92,7 @@ export const productImages = {
   'aleksandrija-bela-075l': aleksandrijaBela,
   'aleksandrija-crvena-0187l': aleksandrijaCrvena,
   'aleksandrija-crvena-075l': aleksandrijaCrvena,
+  biftek,
   'bira-moreti': biraMoreti,
   cezar,
   'chips-tikvichki': chipsTikvichki,
@@ -127,10 +133,13 @@ export const productImages = {
   'negazirana-05l': negazirana05l,
   'negazirana-plastika-1l': negaziranaPlastika1l,
   'negazirana-staklo': negaziranaStaklo,
+  ognishtarka,
   'pastrmajlija-chista': pastrmajlijaChista,
   'peglana-piperka': peglanaPiperka,
   pepsi,
+  'pileshki-kopan-bez-koska': pileshkiKopanBezKoska,
   'pileshki-prsti': pileshkiPrsti,
+  'pileshki-stek': pileshkiStek,
   'piperka-vo-pavlaka': piperkaVoPavlaka,
   'pohovan-kashkaval': pohovanKashkaval,
   'pohovani-zdenki': pohovaniZdenki,
@@ -163,6 +172,7 @@ export const productImages = {
   tonik,
   traminec,
   'traminec-bovin': traminecBovin,
+  uvijach,
   uzo: uzoPlomari,
   'uzo-plomari': uzoPlomari,
   'uzo-plomari-shishe': uzoPlomariShishe,
