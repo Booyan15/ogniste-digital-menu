@@ -74,13 +74,13 @@ function menuItem(
 
 export const menuItems = [
   // Доручек / Breakfast
-  menuItem('omlet', 'breakfast', 160, 'Омлет', 'Omelette', 'Шунка / чадена сланина, кашкавал, печурки, сирење.', 'Ham / smoked bacon, yellow cheese, mushrooms, white cheese.'),
-  menuItem('przheni-lepchina', 'breakfast', 160, 'Пржени лепчиња', 'Fried Bread Slices', '4 рибанки, чаша кисело млеко или парче сирење.', '4 fried bread slices, served with a glass of sour milk or a piece of white cheese.'),
-  menuItem('chorba-teleshka', 'breakfast', 160, 'Телешка чорба', 'Veal Soup', 'Телешко месо, печурки, зачини.', 'Veal meat, mushrooms, spices.'),
-  menuItem('chorba-pileshka', 'breakfast', 160, 'Пилешка чорба', 'Chicken Soup', 'Пилешко месо, печурки, зачини.', 'Chicken meat, mushrooms, spices.'),
-  menuItem('chorba-zajachka', 'breakfast', 160, 'Зајачка чорба', 'Rabbit Soup', 'Зајачко месо, печурки, зачини.', 'Rabbit meat, mushrooms, spices.'),
-  menuItem('chorba-chkembe', 'breakfast', 160, 'Чкембе чорба', 'Tripe Soup', 'Месо, печурки, зачини.', 'Meat, mushrooms, spices.'),
-  menuItem('gulash', 'breakfast', 200, 'Гулаш', 'Goulash', 'Свинско месо со печурки и зачини, пире, зелка.', 'Pork meat with mushrooms and spices, mashed potatoes, cabbage.'),
+  menuItem('omlet', 'breakfast', 180, 'Омлет', 'Omelette', 'Шунка / чадена сланина, кашкавал, печурки, сирење.', 'Ham / smoked bacon, yellow cheese, mushrooms, white cheese.'),
+  menuItem('przheni-lepchina', 'breakfast', 180, 'Пржени лепчиња', 'Fried Bread Slices', '4 рибанки, чаша кисело млеко или парче сирење.', '4 fried bread slices, served with a glass of sour milk or a piece of white cheese.'),
+  menuItem('chorba-teleshka', 'breakfast', 180, 'Телешка чорба', 'Veal Soup', 'Телешко месо, печурки, зачини.', 'Veal meat, mushrooms, spices.'),
+  menuItem('chorba-pileshka', 'breakfast', 180, 'Пилешка чорба', 'Chicken Soup', 'Пилешко месо, печурки, зачини.', 'Chicken meat, mushrooms, spices.'),
+  menuItem('chorba-zajachka', 'breakfast', 180, 'Зајачка чорба', 'Rabbit Soup', 'Зајачко месо, печурки, зачини.', 'Rabbit meat, mushrooms, spices.'),
+  menuItem('chorba-chkembe', 'breakfast', 180, 'Чкембе чорба', 'Tripe Soup', 'Месо, печурки, зачини.', 'Meat, mushrooms, spices.'),
+  menuItem('gulash', 'breakfast', 220, 'Гулаш', 'Goulash', 'Свинско месо со печурки и зачини, пире, зелка.', 'Pork meat with mushrooms and spices, mashed potatoes, cabbage.'),
   menuItem('tavche-gravche', 'breakfast', 130, 'Тавче гравче', 'Baked Beans', 'Традиционално тавче гравче.', 'Traditional Macedonian baked beans.'),
 
   // Салати / Salads
@@ -95,16 +95,16 @@ export const menuItems = [
   menuItem('zelka-salata', 'salads', 100, 'Зелка', 'Cabbage Salad', 'Зелка, маслинки.', 'Cabbage, olives.'),
 
   // Топли предјадења / Hot Appetizers
-  menuItem('pileshki-prsti', 'hot-starters', 200, 'Пилешки прсти 250 гр', 'Chicken Fingers 250 g', 'Поховани пилешки прсти.', 'Breaded chicken fingers.'),
-  menuItem('pohovan-kashkaval', 'hot-starters', 100, 'Похован кашкавал 100 гр', 'Breaded Yellow Cheese 100 g', 'Похован кашкавал.', 'Breaded yellow cheese.'),
-  menuItem('porcija-piroshki', 'hot-starters', 100, 'Порција пирошки', 'Portion of Piroshki', 'Пирошки.', 'Piroshki portion.'),
+  menuItem('pileshki-prsti', 'hot-starters', 220, 'Пилешки прсти 250 гр', 'Chicken Fingers 250 g', 'Поховани пилешки прсти.', 'Breaded chicken fingers.'),
+  menuItem('pohovan-kashkaval', 'hot-starters', 120, 'Похован кашкавал 100 гр', 'Breaded Yellow Cheese 100 g', 'Похован кашкавал.', 'Breaded yellow cheese.'),
+  menuItem('porcija-piroshki', 'hot-starters', 120, 'Порција пирошки', 'Portion of Piroshki', 'Пирошки.', 'Piroshki portion.'),
   menuItem('pechurki', 'hot-starters', 180, 'Печурки 300 гр', 'Mushrooms 300 g', 'Поховани или пржени печурки.', 'Breaded or fried mushrooms.'),
-  menuItem('pohovan-pileshki-stek', 'hot-starters', 220, 'Похован пилешки стек', 'Breaded Chicken Steak', 'Похован пилешки стек.', 'Breaded chicken steak.'),
+  menuItem('pohovan-pileshki-stek', 'hot-starters', 240, 'Похован пилешки стек', 'Breaded Chicken Steak', 'Похован пилешки стек.', 'Breaded chicken steak.'),
   menuItem('przheni-tikvichki', 'hot-starters', 120, 'Пржени тиквички', 'Fried Zucchini', 'Пржени тиквички.', 'Fried zucchini.'),
   menuItem('chips-tikvichki', 'hot-starters', 120, 'Чипс тиквички', 'Zucchini Chips', 'Крцкави тиквички.', 'Crispy zucchini chips.'),
-  menuItem('pomfrit', 'hot-starters', 100, 'Помфрит', 'French Fries', 'Помфрит.', 'French fries.'),
-  menuItem('pomfrit-so-sirenje', 'hot-starters', 120, 'Помфрит со сирење', 'French Fries with Cheese', 'Помфрит со сирење.', 'French fries with white cheese.'),
-  menuItem('pohovani-zdenki', 'hot-starters', 100, 'Поховани зденки 4 бр', 'Breaded Cheese Triangles 4 pcs', 'Поховани зденки, 4 парчиња.', 'Breaded cheese triangles, 4 pieces.'),
+  menuItem('pomfrit', 'hot-starters', 120, 'Помфрит', 'French Fries', 'Помфрит.', 'French fries.'),
+  menuItem('pomfrit-so-sirenje', 'hot-starters', 140, 'Помфрит со сирење', 'French Fries with Cheese', 'Помфрит со сирење.', 'French fries with white cheese.'),
+  menuItem('pohovani-zdenki', 'hot-starters', 120, 'Поховани зденки 4 бр', 'Breaded Cheese Triangles 4 pcs', 'Поховани зденки, 4 парчиња.', 'Breaded cheese triangles, 4 pieces.'),
 
   // Главно јадење / Main Dishes
   menuItem('lozheno', 'mains', 900, 'Ложено 1 кг', 'Lozheno 1 kg', 'Месен специјалитет.', 'Meat specialty.'),
@@ -138,6 +138,7 @@ export const menuItems = [
   menuItem('lepche-so-kajmak', 'extras', 100, 'Лепче со кајмак', 'Bread with Kajmak', 'Лепче со кајмак.', 'Bread with kajmak.'),
   menuItem('piperka', 'extras', 30, 'Пиперка', 'Pepper', 'Пиперка.', 'Pepper.'),
   menuItem('peglana-piperka', 'extras', 40, 'Пеглана пиперка', 'Flattened Pepper', 'Пеглана пиперка.', 'Flattened pepper.'),
+  menuItem('garnir', 'extras', 30, 'Гарнир', 'Side Dish', 'Помфрит, варен компир, ориз.', 'French fries, boiled potatoes, rice.'),
 
   // Пици / Pizzas
   menuItem('ognishte-pica', 'pizza', 300, 'Огниште пица', 'Ognishte Pizza', 'Пелат, кашкавал, кулен, сланина, печурки, сирење, феферони лути, оригано.', 'Tomato sauce, yellow cheese, kulen, bacon, mushrooms, white cheese, hot pepperoni, oregano.'),
