@@ -7,7 +7,7 @@ import chipsTikvichki from '../assets/product-images/chips-tikvichki.webp';
 import chizkejk from '../assets/product-images/chizkejk.webp';
 import chorbaChkembe from '../assets/product-images/chorba-chkembe.webp';
 import chorbaPileshka from '../assets/product-images/chorba-pileshka.webp';
-import chorbaZajachka from '../assets/product-images/chorba-zajachka.webp';
+import chorbaTeleshka from '../assets/product-images/chorba-teleshka.webp';
 import dab from '../assets/product-images/dab.webp';
 import dabAmber from '../assets/product-images/dab-amber.webp';
 import diplomatskaVeshalica from '../assets/product-images/diplomatska-veshalica.webp';
@@ -26,7 +26,6 @@ import gulash from '../assets/product-images/gulash.webp';
 import gusti from '../assets/product-images/gusti.webp';
 import hajneken from '../assets/product-images/hajneken.webp';
 import jelen from '../assets/product-images/jelen.webp';
-import kajmak from '../assets/product-images/kajmak.webp';
 import kaprichioza from '../assets/product-images/kaprichioza.webp';
 import kokaKola from '../assets/product-images/koka-kola.webp';
 import konjak from '../assets/product-images/konjak.webp';
@@ -45,9 +44,11 @@ import negaziranaStaklo from '../assets/product-images/negazirana-staklo.webp';
 import pastrmajlijaChista from '../assets/product-images/pastrmajlija-chista.webp';
 import peglanaPiperka from '../assets/product-images/peglana-piperka.webp';
 import pepsi from '../assets/product-images/pepsi.webp';
+import piperkaVoPavlaka from '../assets/product-images/piperka-vo-pavlaka.webp';
 import polnetaPleskavicaSoKajmak from '../assets/product-images/polneta-pleskavica-so-kajmak.webp';
 import pomfritSoSirenje from '../assets/product-images/pomfrit-so-sirenje.webp';
-import rebro from '../assets/product-images/rebro.webp';
+import przheniLepchina from '../assets/product-images/przheni-lepchina.webp';
+import rebroVoFurna from '../assets/product-images/rebro-vo-furna.webp';
 import roze from '../assets/product-images/roze.webp';
 import shveps from '../assets/product-images/shveps.webp';
 import shopska from '../assets/product-images/shopska.webp';
@@ -73,6 +74,7 @@ import vitaminska from '../assets/product-images/vitaminska.webp';
 import vitach from '../assets/product-images/vitach.webp';
 import votka from '../assets/product-images/votka.webp';
 import vranec from '../assets/product-images/vranec.webp';
+import zimenPindzhur from '../assets/product-images/zimen-pindzhur.webp';
 
 // Optimized product photos. Only clear product matches are included here.
 export const productImages = {
@@ -87,7 +89,7 @@ export const productImages = {
   chizkejk,
   'chorba-chkembe': chorbaChkembe,
   'chorba-pileshka': chorbaPileshka,
-  'chorba-zajachka': chorbaZajachka,
+  'chorba-teleshka': chorbaTeleshka,
   dab,
   'dab-amber': dabAmber,
   'diplomatska-veshalica': diplomatskaVeshalica,
@@ -106,7 +108,6 @@ export const productImages = {
   gusti,
   hajneken,
   jelen,
-  kajmak,
   kaprichioza,
   'koka-kola': kokaKola,
   konjak,
@@ -125,9 +126,11 @@ export const productImages = {
   'pastrmajlija-chista': pastrmajlijaChista,
   'peglana-piperka': peglanaPiperka,
   pepsi,
+  'piperka-vo-pavlaka': piperkaVoPavlaka,
   'polneta-pleskavica-so-kajmak': polnetaPleskavicaSoKajmak,
   'pomfrit-so-sirenje': pomfritSoSirenje,
-  rebro,
+  'przheni-lepchina': przheniLepchina,
+  'rebro-vo-furna': rebroVoFurna,
   roze,
   'saks-tonik': dzhinSaks,
   'sechena-votka': votka,
@@ -158,4 +161,5 @@ export const productImages = {
   vitach,
   votka,
   vranec,
+  'zimen-pindzhur': zimenPindzhur,
 };
