@@ -44,9 +44,13 @@ import negaziranaStaklo from '../assets/product-images/negazirana-staklo.webp';
 import pastrmajlijaChista from '../assets/product-images/pastrmajlija-chista.webp';
 import peglanaPiperka from '../assets/product-images/peglana-piperka.webp';
 import pepsi from '../assets/product-images/pepsi.webp';
+import pileshkiPrsti from '../assets/product-images/pileshki-prsti.webp';
 import piperkaVoPavlaka from '../assets/product-images/piperka-vo-pavlaka.webp';
+import pohovanKashkaval from '../assets/product-images/pohovan-kashkaval.webp';
+import pohovaniZdenki from '../assets/product-images/pohovani-zdenki.webp';
 import polnetaPleskavicaSoKajmak from '../assets/product-images/polneta-pleskavica-so-kajmak.webp';
 import pomfritSoSirenje from '../assets/product-images/pomfrit-so-sirenje.webp';
+import porcijaPiroshki from '../assets/product-images/porcija-piroshki.webp';
 import przheniLepchina from '../assets/product-images/przheni-lepchina.webp';
 import rebroVoFurna from '../assets/product-images/rebro-vo-furna.webp';
 import roze from '../assets/product-images/roze.webp';
@@ -126,9 +130,13 @@ export const productImages = {
   'pastrmajlija-chista': pastrmajlijaChista,
   'peglana-piperka': peglanaPiperka,
   pepsi,
+  'pileshki-prsti': pileshkiPrsti,
   'piperka-vo-pavlaka': piperkaVoPavlaka,
+  'pohovan-kashkaval': pohovanKashkaval,
+  'pohovani-zdenki': pohovaniZdenki,
   'polneta-pleskavica-so-kajmak': polnetaPleskavicaSoKajmak,
   'pomfrit-so-sirenje': pomfritSoSirenje,
+  'porcija-piroshki': porcijaPiroshki,
   'przheni-lepchina': przheniLepchina,
   'rebro-vo-furna': rebroVoFurna,
   roze,
